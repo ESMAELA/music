@@ -314,10 +314,10 @@ function play(guild, song) {
 
 
 client.on('message', message => {
-    if (message.content === 'THhelp') {
+    if (message.content === '1help') {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر الميوزك...**')
-        .setDescription('**برفكس البوت (!)**')
+        .setDescription('**برفكس البوت (1)**')
         .addField('play', 'لتشغيل اغنية')
         .addField('join', 'دخول رومك الصوتي')
         .addField('disconnect', 'الخروج من رومك الصوتي')
@@ -331,7 +331,7 @@ client.on('message', message => {
     }
 });
 
-const developers = ["472413769700474901","id"]
+const developers = ["609770616480071681","id"]
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
